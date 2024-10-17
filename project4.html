@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Details about the Social Media App project.">
+    <title>Project 4 - Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="dropdown">
+                <a href="blog.html" class="dropbtn">Blog</a>
+                <div class="dropdown-content">
+                    <a href="blog1.html">Blog Post 1</a>
+                    <a href="blog2.html">Blog Post 2</a>
+                    <a href="blog3.html">Blog Post 3</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <section class="project-details">
+            <h1>Project 4: Social Media App</h1>
+            <img src="socialmedia.jpg" alt="Social Media App screenshot" class="project-image">
+            <p>This project was about developing a social media platform that allows users to create profiles, post updates, follow other users, and engage through likes and comments. The application also features real-time notifications and a private messaging system.</p>
+
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>Frontend: React.js, CSS3</li>
+                <li>Backend: Node.js, Express.js, MongoDB</li>
+                <li>Real-time notifications: Socket.io</li>
+            </ul>
+
+            <h2>Features</h2>
+            <ul>
+                <li>User authentication with JWT (JSON Web Tokens)</li>
+                <li>Post creation, editing, and deletion</li>
+                <li>Follow/unfollow functionality</li>
+                <li>Real-time notifications for likes, comments, and follows</li>
+                <li>Private messaging with read receipts</li>
+                <li>Profile customization with photo upload</li>
+            </ul>
+
+            <h2>Challenges and Solutions</h2>
+            <p>
+                A significant challenge in this project was implementing real-time features like notifications and messaging. To solve this, I used Socket.io to establish a WebSocket connection between the client and server, ensuring instantaneous updates and messages.
+            </p>
+
+            <h2>Conclusion</h2>
+            <p>
+                This project was a deep dive into real-time web applications and social networking features. It greatly enhanced my understanding of user interaction design and scalable backend development.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

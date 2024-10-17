@@ -1,0 +1,561 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff6347;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+/* Header / Hero Section */
+header {
+    background: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header .btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: #ff4500;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Button */
+section .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+section .btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+/* General portfolio section styles */
+#portfolio {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#portfolio h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.portfolio-container {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.portfolio-grid {
+    display: flex; /* Use flexbox for responsive layout */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between; /* Space out items */
+}
+
+.portfolio-item {
+    flex: 0 0 calc(50% - 20px); /* 50% width with space adjustment */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 20px; /* Space between items */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.portfolio-item .btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.portfolio-item .btn:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex: 0 0 calc(100% - 20px); /* Full width on smaller screens */
+    }
+}
+/* General blog post styles */
+#blog-post-1, #blog-post-2 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left; /* Align text to the left for readability */
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.post-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    font-size: 1.1em;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Back to blog button style */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+/* General contact form styles */
+#contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff6347; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500; /* Button hover color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #contact {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+/* General project page styles */
+#project-1 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-description h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project-description p {
+    line-height: 1.6;
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+/* General project page styles */
+#project-2 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-description h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project-description p {
+    line-height: 1.6;
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+/* General project page styles */
+#project-1, #project-2 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-description h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+/* Apply justified text alignment for all paragraph content */
+.project-description p, 
+.project-description ul {
+    text-align: justify;  /* Justify-align the text */
+    line-height: 1.6;     /* Improve line spacing for readability */
+}
+
+.project-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+/* Centering the contact button */
+#contact {
+    text-align: center; /* Center the button */
+    padding: 20px;
+}
+
+/* Black button with white text */
+#contact .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000; /* Black background color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact .btn:hover {
+    background-color: #333333; /* Slightly lighter black on hover */
+}
